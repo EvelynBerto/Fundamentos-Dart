@@ -1,7 +1,8 @@
-//interface é uma classe abstrata
+//interface é sempre uma classe abstrata que se usa como interface
 abstract class Camiseta {
   String? cor;
   String tipoDeLavagem();
+  //polimorfismo
 }
 
 class CamisetaGolaV implements Camiseta {
@@ -11,7 +12,7 @@ class CamisetaGolaV implements Camiseta {
   }
 
   @override
-  String? cor;
+  String? cor = 'branca';
 }
 
 void main() {
